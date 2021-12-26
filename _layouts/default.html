@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+{% include head.html %}
+
+<body class="layout-reverse sidebar-overlay">
+
+  {% include sidebar.html %}
+	<div class="Header">
+		<div class="Header-item">
+			<a href="#" class="Header-link f4" style="min-height:32px;">
+				<span>C ve Sistem Programcıları Derneği</span>
+			</a>
+		</div>
+	</div>
+  <div class="container-md p-2 pt-6">
+    {{ content }}
+  </div>
+  <!-- <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Home">
+            <span class="masthead-title-large">{{ site.title }}</span>
+            <span class="masthead-title-small">{{ site.subtitle }}</span>
+          </a>
+        </h3>
+      </div>
+    </div>
+    <div class="container content">
+      {{ content }}
+    </div>
+  </div> -->
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script src='{{ site.baseurl }}/public/js/script.js'></script>
+</body>
+
+</html>
