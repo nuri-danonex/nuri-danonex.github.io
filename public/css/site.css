@@ -228,3 +228,34 @@
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
     box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
+
+/*
+* csystemLogo
+*/
+.csystemLogo {
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(200, 255, 47, 0.904);
+    letter-spacing: 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.csystemLogo.small {
+    display: block;
+}
+
+.csystemLogo.large {
+    display: none;
+}
+
+@media (min-width: 48em) {
+
+    .csystemLogo.small {
+        display: none;
+    }
+    
+    .csystemLogo.large {
+        display: block;
+    }
+}
