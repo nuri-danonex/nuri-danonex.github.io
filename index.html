@@ -1,21 +1,44 @@
 ---
-layout: default
+layout: home
 ---
-<div class="markdown-body">
-	<div class="Subhead">
-		<div class="Subhead-heading">Subhead with description</div>
-		<div class="Subhead-description">The subhead is a subdued header style with a light bottom border.</div>
-	  </div>
+ <!-- <ul>
+  {% for course in site.html_pages %}
+  <li>
+    <h2><a href="{{ course.url }}">{{ course.url }}</a></h2>
+  </li>
+  {% endfor %}
+</ul>  -->
 
-	  <div class="Subhead">
-		<div class="Subhead-heading">Subhead with button</div>
-		<div class="Subhead-actions">
-			<details class="details-overlay details-overlay-dark">
-				<summary class="btn">More</summary>
-				<div class="position-absolute right-0 top-0 color-bg-default height-full rounded p-3 m-2" style="z-index: 112;">
-				  Hidden text
-				</div>
-			  </details>
-		</div>
-	  </div>
-</div>
+
+<ul>
+  {% for course in site.courses %}
+  <li>
+    <h2><a href="{{ course.url }}">{{ course.title }}</a></h2>
+    <p>{{ course.content | markdownify }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<h1>Posts</h1>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  </li>
+  {% endfor %}
+</ul> 
+  
+<!-- 
+
+
+<h1>Duyurular</h1>
+
+-->
+<!-- 
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  </li>
+  {% endfor %}
+</ul>  -->

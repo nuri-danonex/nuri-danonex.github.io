@@ -1,18 +1,15 @@
 # Setup
-title: C ve Sistem Programcıları Derneği
-subtitle: CSD
-tagline: CSD
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
-baseurl:             ''
-paginate:            5
-permalink:           pretty
+# title: C ve Sistem Programcıları Derneği
+# subtitle: CSD
+# tagline: CSD
+# description:  'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+# url:                 http://lanyon.getpoole.com
+# baseurl:             ''
+# paginate:            5
 
-
-
-
+permalink: pretty
 email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- 
   C ve Sistem Programcıları Derneği, 
   çalışmalarını C/C++ programlama dilleri ile yürüten 
   ve deneyimlerini sistem programlama alanı ile ilişkilendiren 
@@ -20,18 +17,19 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" 
 # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+paginate: 5
 
-
-# # Build settings
 theme: minima
+
+collections:
+  courses:
+   output: true
+
 
 
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-github-metadata
 
 # Exclude from processing.
 # The following items will not be processed, by default.

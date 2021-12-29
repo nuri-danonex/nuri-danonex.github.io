@@ -4,7 +4,8 @@ title: Biz kimiz?
 permalink: /about/
 ---
 
-# Hakkımızda 
+## Hakkımızda
+
 
 C ve Sistem Programcılar Derneği, çalışmalarını C/C++ programlama dilleri ile yürüten ve deneyimlerini sistem programlama alanı ile ilişkilendiren uzmanların oluşturduğu bir dernektir. 1993 yılında kurulmuştur.
 
@@ -24,4 +25,30 @@ C ve Sistem Programcılar Derneği, çalışmalarını C/C++ programlama dilleri
 - C/C++ ve sistem programcılığını özendiren yarışmalar düzenler.
 - C/C++ ve sistem programlama alanında bilimsel, teknik, kültürel ve sosyal etkinlikler hazırlar.
 
-Sayfa geliştirmeye açıktır. {% github_edit_link "link'i izleyerek sayfayı güncelleyebilirsiniz." %}.
+## Yönetim Kurulu
+Kaan Aslan **Başkan** .
+
+Ali Vefa Serçe **Başkan Yardımcısı**
+
+Medeni Demir **Sayman**
+
+Gürbüz Aslan **Yazman**
+
+Gürkan Kurtoğlu
+
+Hüseyin Büte
+
+Oğuz Karan
+
+## Denetleme Kurulu
+Sebahat Ersoy
+
+Gencay Çoşkun
+
+Metin Aşçı
+
+## İdari İşler
+
+Güray Sönmez **Genel Sekreter**
+
+Gencay Coşkun **Genel Sekreter Yardımcısı, Muhasebe Müdürü**
