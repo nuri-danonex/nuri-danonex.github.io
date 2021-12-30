@@ -1,0 +1,11 @@
+---
+layout: home
+---
+
+<ul>
+  {% for course in site.courses %}
+  <li>
+    <h2><a href="{{ course.url }}">{{ course.title }}</a></h2>
+  </li>
+  {% endfor %}
+</ul>
