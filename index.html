@@ -1,44 +1,15 @@
 ---
 layout: home
 ---
- <!-- <ul>
-  {% for course in site.html_pages %}
-  <li>
-    <h2><a href="{{ course.url }}">{{ course.url }}</a></h2>
-  </li>
-  {% endfor %}
-</ul>  -->
-
-
-<ul>
-  {% for course in site.courses %}
-  <li>
-    <h2><a href="{{ course.url }}">{{ course.title }}</a></h2>
-    <p>{{ course.content | markdownify }}</p>
-  </li>
-  {% endfor %}
-</ul>
-
-<h1>Posts</h1>
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  </li>
-  {% endfor %}
-</ul> 
-  
-<!-- 
-
-
-<h1>Duyurular</h1>
-
--->
-<!-- 
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  </li>
-  {% endfor %}
-</ul>  -->
+{% for post in site.posts %}
+<div class="py-3 mb-4">
+  <div class="h4-mktg">{{ post.title }}</div>
+  <div class="f1">{{ post.subject }}</div>
+  <div class="f3">{{ post.details }}</div>
+  <div class="d-flex flex-justify-between">
+    <p>Yayınlanma Tarihi: <span>{{ post.date }}</span></p> 
+    <a class="link" role="button" href="{{ post.url }}">Devamını oku...</a>
+  </div>
+  <hr class="py-3" />
+</div>
+{% endfor %}
